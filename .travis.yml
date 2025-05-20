@@ -15,7 +15,7 @@ after_success:
   - docker build -t birjik/multi-server ./server
   - docker build -t birjik/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker push birjik/multi-client ./client
-  - docker push birjik/multi-nginx ./nginx
-  - docker push birjik/multi-server ./server
-  - docker push birjik/multi-worker ./worker
+  - docker push birjik/multi-client
+  - docker push birjik/multi-nginx
+  - docker push birjik/multi-server
+  - docker push birjik/multi-worker
