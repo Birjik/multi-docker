@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+const axios = require("axios");
  
 const Fib = () => {
   const [seenIndexes, setSeenIndexes] = useState([]);
